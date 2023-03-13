@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    min-height: 1000px;
+    // background-color: #333;
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    // background-color: lightblue;
+    min-height: 1000px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #eee;
+    border-radius: 10px;
+}
