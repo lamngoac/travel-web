@@ -1,0 +1,80 @@
+@import 'src/components/GlobalStyles/GlobalStyles.scss';
+
+.wrapper {
+    font-size: 1.6rem;
+    font-weight: 700;
+    min-width: 40px;
+    min-height: 32px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.userinfobtn {
+    font-size: 2.2rem;
+    height: 48px;
+    width: 48px;
+    color: var(--bs-secondary);
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.primary {
+    height: 38px;
+    width: 144px;
+    color: var(--bs-secondary);
+    background-color: #fff;
+    box-shadow: 0 2px 0 #e2f3ff;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+
+    &:hover {
+        background: var(--bs-darkblue);
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.outline32 {
+    height: 32px;
+    min-width: 90px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--bs-darkblue);
+    border-color: var(--bs-darkblue);
+    background-color: transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+
+    &:hover {
+        background: var(--bs-darkblue);
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.book32 {
+    height: 32px;
+    min-width: 90px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+
+    &:hover {
+        background-color: var(--bs-red-nn);
+        border-color: var(--bs-red-nnn);
+        cursor: pointer;
+    }
+}

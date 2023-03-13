@@ -5,8 +5,11 @@
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
+    --bs-darkblue: #4d4aef;
     --bs-pink: #d63384;
     --bs-red: #dc3545;
+    --bs-red-nn: #ca4045;
+    --bs-red-nnn: #be3c41;
     --bs-orange: #fd7e14;
     --bs-yellow: #ffc107;
     --bs-green: #198754;
@@ -66,6 +69,13 @@ ul,
 dl {
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
 }
 
 ::-webkit-scrollbar {
