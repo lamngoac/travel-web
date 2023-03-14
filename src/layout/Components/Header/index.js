@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //import Tippy from '@tippyjs/react/headless';
 
 import styles from './Header.module.scss';
@@ -15,11 +15,29 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <div className={cx('logo')}>
+                <Link className={cx('logo')} to="/">
                     <img className={cx('logo-img')} src={images.logo} alt="Vietravel Logo" />
-                </div>
+                </Link>
                 <div className={cx('function')}>
-                    <div className={cx('action')}>Info</div>
+                    <div className={cx('action')}>
+                        <Button menuitbtn dropdowntoggle>
+                            Du lịch
+                        </Button>
+                        <Button menuitbtn>Non nước Việt Nam</Button>
+                        <Button menuitbtn dropdowntoggle>
+                            Vận chuyển
+                        </Button>
+                        <Button menuitbtn dropdowntoggle>
+                            Tin tức
+                        </Button>
+                        <Button menuitbtn dropdowntoggle>
+                            Khuyến mãi
+                        </Button>
+                        <Button menuitbtn dropdowntoggle>
+                            Giới thiệu
+                        </Button>
+                        <Button menuitbtn> Liên hệ</Button>
+                    </div>
                     <div className={cx('search')}>
                         <input placeholder="Bắt đầu tìm kiếm..." spellCheck={false} />
                         <button className={cx('search-btn')}>
@@ -27,18 +45,9 @@ function Header() {
                         </button>
                     </div>
                     <div className={cx('info')}>
-                        <Button userinfobtn>
+                        <Button userinfobtn to="/login">
                             <FontAwesomeIcon icon={faUser} />
                         </Button>
-                    </div>
-                    <div className={cx('info')}>
-                        <Button primary>Test Button</Button>
-                    </div>
-                    <div className={cx('info')}>
-                        <Button outline32>Test Button</Button>
-                    </div>
-                    <div className={cx('info')}>
-                        <Button book32>Test Button</Button>
                     </div>
                 </div>
             </div>

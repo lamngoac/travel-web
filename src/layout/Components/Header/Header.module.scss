@@ -29,6 +29,7 @@
 
 .function {
     display: flex;
+    justify-content: space-between;
     flex-basis: 1;
     width: 100%;
     height: 56px;
@@ -41,7 +42,7 @@
     margin-right: 6px;
     height: 50px;
     min-width: 224px;
-    border: 2px solid #ffc709;
+    border: 2px solid var(--bs-yellow);
     border-radius: 5px;
     position: relative;
 
